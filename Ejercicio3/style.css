@@ -1,0 +1,72 @@
+/*Cambia los colores de las clases de forma general*/
+:root {
+  --bs-primary: #2F6FED;
+  --bs-primary-rgb: 47, 111, 237;
+  --bs-warning: #FFB020;
+  --bs-warning-rgb: 255, 176, 32;
+  --bs-dark: #12213B;
+  --bs-dark-rgb: 18, 33, 59;
+  --bs-body-font-family: 'Segoe UI', Arial, sans-serif;
+  --bs-border-radius: 10px;
+  --bs-border-radius-lg: 10px;
+}
+
+.btn-primary {
+  --bs-btn-hover-bg: #1B4FC2;
+  --bs-btn-hover-border-color: #1B4FC2;
+}
+
+.btn-outline-primary {
+  --bs-btn-hover-bg: #2F6FED;
+}
+
+.bg-light-subtle {
+  background-color: #F5F7FB !important;
+}
+
+img {
+  background-color: #E9ECF2;
+  object-fit: cover;
+}
+
+.producto-card {
+  transition: box-shadow 0.2s ease;
+}
+
+.producto-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.card-img-top {
+  aspect-ratio: 4 / 3;
+}
+
+/* Sidebar de filtros */
+.sidebar-sticky {
+  position: sticky;
+  top: 90px;
+}
+
+#filtroCategorias .list-group-item,
+#filtroPrecios .list-group-item {
+  cursor: pointer;
+  border-left: 0;
+  border-right: 0;
+}
+
+#filtroCategorias .list-group-item:first-child,
+#filtroPrecios .list-group-item:first-child {
+  border-top: 0;
+}
+
+#filtroCategorias .list-group-item.active,
+#filtroPrecios .list-group-item.active {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+@media (max-width: 991.98px) {
+  .sidebar-sticky {
+    position: static;
+  }
+}
