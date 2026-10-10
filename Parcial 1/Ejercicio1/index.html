@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteHouse - Tienda de Electrónicos</title>
+
+  <!-- Bootstrap 5 (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- Nuestros ajustes de marca, van DESPUÉS de Bootstrap para poder sobreescribirlo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!--INICIO -->
+  <header class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">Byte<span class="text-warning">House</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+        <ul class="navbar-nav gap-lg-4 text-center">
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resenas">Reseñas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="py-5 bg-light-subtle">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="display-5 fw-bold text-dark-emphasis mb-3">
+            La tecnología que necesitas, al alcance de un clic
+          </h1>
+          <p class="lead text-secondary mb-4">
+            En ByteHouse encuentras laptops, audífonos, smartwatches y mucho más,
+            con la mejor calidad y precios pensados para ti.
+          </p>
+          <a href="#productos" class="btn btn-primary btn-lg px-4">Ver productos</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/ph.jpg" class="img-fluid rounded-3" alt="Productos electrónicos destacados">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--PRODUCTOS -->
+  <section id="productos" class="py-5">
+    <div class="container py-4">
+      <h2 class="text-center fw-bold text-dark-emphasis">Nuestros productos</h2>
+      <p class="text-center text-secondary mb-5">Los favoritos de nuestros clientes</p>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+
+        <div class="col">
+          <div class="card h-100 text-center shadow-sm producto-card">
+            <img src="images/ph.jpg" class="card-img-top" alt="Laptop ultradelgada">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Laptop UltraSlim 14"</h3>
+              <p class="card-text text-secondary small">Ligera, potente y con batería de larga duración.</p>
+              <p class="fw-bold text-warning fs-5 mt-auto">$14,999 MXN</p>
+              <button class="btn btn-outline-primary btn-agregar">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center shadow-sm producto-card">
+            <img src="images/ph.jpg" class="card-img-top" alt="Audífonos inalámbricos">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Audífonos SoundMax Pro</h3>
+              <p class="card-text text-secondary small">Cancelación de ruido y sonido envolvente.</p>
+              <p class="fw-bold text-warning fs-5 mt-auto">$1,299 MXN</p>
+              <button class="btn btn-outline-primary btn-agregar">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center shadow-sm producto-card">
+            <img src="images/ph.jpg" class="card-img-top" alt="Smartwatch deportivo">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Smartwatch FitTrack 2</h3>
+              <p class="card-text text-secondary small">Monitorea tu ritmo cardiaco y actividad diaria.</p>
+              <p class="fw-bold text-warning fs-5 mt-auto">$1,899 MXN</p>
+              <button class="btn btn-outline-primary btn-agregar">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center shadow-sm producto-card">
+            <img src="images/ph.jpg" class="card-img-top" alt="Cámara digital">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Cámara PixelShot X</h3>
+              <p class="card-text text-secondary small">Fotografía profesional en un formato compacto.</p>
+              <p class="fw-bold text-warning fs-5 mt-auto">$7,499 MXN</p>
+              <button class="btn btn-outline-primary btn-agregar">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center shadow-sm producto-card">
+            <img src="images/ph.jpg" class="card-img-top" alt="Bocina portátil">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Bocina PowerSound Mini</h3>
+              <p class="card-text text-secondary small">Sonido potente en un diseño resistente al agua.</p>
+              <p class="fw-bold text-warning fs-5 mt-auto">$899 MXN</p>
+              <button class="btn btn-outline-primary btn-agregar">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center shadow-sm producto-card">
+            <img src="images/ph.jpg" class="card-img-top" alt="Teclado mecánico">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Teclado MecaType RGB</h3>
+              <p class="card-text text-secondary small">Switches mecánicos con iluminación personalizable.</p>
+              <p class="fw-bold text-warning fs-5 mt-auto">$1,599 MXN</p>
+              <button class="btn btn-outline-primary btn-agregar">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--SECCIÓN DE RESEÑAS-->
+  <section id="resenas" class="py-5 bg-light-subtle">
+    <div class="container py-4">
+      <h2 class="text-center fw-bold text-dark-emphasis mb-5">Lo que dicen nuestros clientes</h2>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col">
+          <div class="card h-100 text-center border-0 shadow-sm p-4">
+            <img src="images/ph.jpg" class="rounded-circle mx-auto mb-3" width="70" height="70" alt="Foto de cliente">
+            <p class="text-warning mb-2">★★★★★</p>
+            <p class="fst-italic text-secondary">"Excelente atención y la laptop llegó en perfecto estado. 100% recomendado."</p>
+            <p class="fw-bold text-dark-emphasis mb-0">— Andrea Gómez</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center border-0 shadow-sm p-4">
+            <img src="images/ph.jpg" class="rounded-circle mx-auto mb-3" width="70" height="70" alt="Foto de cliente">
+            <p class="text-warning mb-2">★★★★☆</p>
+            <p class="fst-italic text-secondary">"Los audífonos tienen muy buena calidad de sonido, superó mis expectativas."</p>
+            <p class="fw-bold text-dark-emphasis mb-0">— Luis Martínez</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center border-0 shadow-sm p-4">
+            <img src="images/ph.jpg" class="rounded-circle mx-auto mb-3" width="70" height="70" alt="Foto de cliente">
+            <p class="text-warning mb-2">★★★★★</p>
+            <p class="fst-italic text-secondary">"Envío rápido y precios justos. Ya es mi tienda de electrónicos favorita."</p>
+            <p class="fw-bold text-dark-emphasis mb-0">— Camila Torres</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer id="contacto" class="bg-dark text-light-emphasis pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4 pb-4">
+        <div class="col-md-4">
+          <div class="fw-bold fs-4 mb-2">Byte<span class="text-warning">House</span></div>
+          <p class="text-white-50">Tu tienda de confianza en tecnología.</p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-white h6 text-uppercase">Contacto</h4>
+          <p class="text-white-50 mb-1">correo: contacto@bytehouse.com</p>
+          <p class="text-white-50">teléfono: (444) 123-4567</p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-white h6 text-uppercase">Síguenos</h4>
+          <p class="text-white-50">Facebook · Instagram · X</p>
+        </div>
+      </div>
+      <p class="text-center text-white-50 small border-top border-secondary pt-3 mb-0">
+        © 2026 ByteHouse. Página de ejemplo (mockup), no es un sitio real.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Dependencias de Bootstrap que dice que se ocupan -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
